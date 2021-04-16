@@ -1,0 +1,7 @@
+# PRECAUTION: avoid production dependencies that aren't in development
+
+-r base.txt
+
+{%- if cookiecutter.use_sentry == "y" %}
+sentry-sdk==0.20.3  # https://github.com/getsentry/sentry-python
+{%- endif %}

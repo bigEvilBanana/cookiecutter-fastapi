@@ -1,10 +1,10 @@
 Cookiecutter FastAPI
-===================
+=====================
 
 Powered by Cookiecutter_, Cookiecutter FastAPI is a framework that helps you to start
 production-ready FastAPI projects quickly.
 
-* Documentation: TODO: create readthedock docs
+* Documentation: it's in progress
 * If you have problems with Cookiecutter FastAPI, please open issues_
 
 .. _issues: https://github.com/
@@ -44,6 +44,21 @@ We admire the work they have done!
 
 .. _Cookiecutter-Django: https://github.com/pydanny/cookiecutter-django
 
+
+Usage
+------
+
+First, get Cookiecutter. Trust me, it's awesome::
+
+    $ pip3 install "cookiecutter>=1.7.0"
+
+Now run it against this repo::
+
+    $ cookiecutter https://github.com/bigEvilBanana/cookiecutter-fastapi
+
+You'll be prompted for some values. Provide them, then a FastAPI project will be created for you.
+
+
 Optional Integrations
 ---------------------
 
@@ -71,7 +86,7 @@ Pyup brings you automated security and dependency updates used by Google and oth
 Community
 -----------
 
-* If you think you found a bug or want to request a feature, please open an issue_.
+If you think you found a bug or want to request a feature, please open an issue_.
 
 .. _`issue`: https://github.com/
 

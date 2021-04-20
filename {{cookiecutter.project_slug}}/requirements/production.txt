@@ -3,5 +3,5 @@
 -r base.txt
 
 {%- if cookiecutter.use_sentry == "y" %}
-sentry-sdk==0.20.3  # https://github.com/getsentry/sentry-python
+sentry-sdk==1.0.0  # https://github.com/getsentry/sentry-python
 {%- endif %}

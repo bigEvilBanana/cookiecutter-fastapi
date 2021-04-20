@@ -1,6 +1,8 @@
-{%- if cookiecutter.use_sentry == 'y' %}import sentry_sdk
-from sentry_sdk.integrations.asgi import SentryAsgiMiddleware{% endif %}
+{%- if cookiecutter.use_sentry == 'y' %}
+import sentry_sdk{% endif %}
 from fastapi import FastAPI
+{%- if cookiecutter.use_sentry == 'y' %}
+from sentry_sdk.integrations.asgi import SentryAsgiMiddleware{% endif %}
 from starlette.middleware.cors import CORSMiddleware
 
 from app.api.v1.api import api_router as api_router_v1

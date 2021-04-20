@@ -1,3 +1,5 @@
+{%- if cookiecutter.use_sentry == 'y' %}import sentry_sdk
+from sentry_sdk.integrations.asgi import SentryAsgiMiddleware{% endif %}
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
@@ -15,5 +17,13 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+
+{%- if cookiecutter.use_sentry == 'y' %}
+if not settings.SENTRY_DSN:
+    raise EnvironmentError('Please put SENTRY_DSN to your environment')
+
+sentry_sdk.init(dsn=settings.SENTRY_DSN)
+app.add_middleware(SentryAsgiMiddleware)
+{% endif %}
 
 app.include_router(api_router_v1, prefix=settings.API_V1_STR)

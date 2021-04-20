@@ -8,6 +8,10 @@ python-jose==3.2.0
 passlib==1.7.4
 bcrypt==3.2.0
 
+{%- if cookiecutter.use_sentry == "y" %}
+sentry-sdk==0.20.3  # https://github.com/getsentry/sentry-python
+{%- endif %}
+
 # Testing
 # ------------------------------------------------------------------------------
 pytest==6.2.3

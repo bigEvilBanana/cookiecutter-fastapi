@@ -25,6 +25,7 @@ class Settings(BaseSettings):
         raise ValueError(v)
 
     PROJECT_NAME: str = "{{ cookiecutter.project_name }}"
+
     SENTRY_DSN: Optional[HttpUrl] = None
 
     POSTGRES_SERVER: str

@@ -33,4 +33,4 @@ jobs:
                   pip install -r requirements.txt
             - name: Run tox
               run: |
-                  python -m tox
+                  python -m tox -e ${{ matrix.python-version }}

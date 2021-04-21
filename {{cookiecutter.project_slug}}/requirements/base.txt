@@ -1,7 +1,7 @@
 fastapi==0.63.0
 python-multipart==0.0.5
 pydantic==1.8.1
-sqlalchemy==1.4.9
+sqlalchemy==1.4.10
 alembic==1.5.8
 psycopg2-binary==2.8.6
 python-jose==3.2.0
@@ -9,7 +9,7 @@ passlib==1.7.4
 bcrypt==3.2.0
 
 {%- if cookiecutter.use_sentry == "y" %}
-sentry-sdk==0.20.3  # https://github.com/getsentry/sentry-python
+sentry-sdk==1.0.0  # https://github.com/getsentry/sentry-python
 {%- endif %}
 
 # Testing

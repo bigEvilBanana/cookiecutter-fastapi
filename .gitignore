@@ -62,10 +62,8 @@ target/
 # pyenv
 .python-version
 
-{% if cookiecutter.use_celery == 'y' -%}
 # celery beat schedule file
 celerybeat-schedule
-{%- endif %}
 
 # Environments
 .venv
@@ -327,6 +325,4 @@ tags
 
 .pytest_cache/
 
-{% if cookiecutter.use_docker == 'y' %}
 .ipython/
-{%- endif %}

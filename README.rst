@@ -1,6 +1,10 @@
 Cookiecutter FastAPI
 =====================
 
+.. image:: https://github.com/bigEvilBanana/cookiecutter-fastapi/actions/workflows/build.yml/badge.svg
+    :target: https://github.com/bigEvilBanana/cookiecutter-fastapi/actions/workflows/build.yml
+    :alt: Build Status
+
 Powered by Cookiecutter_, Cookiecutter FastAPI is a framework that helps you to start
 production-ready FastAPI projects quickly.
 

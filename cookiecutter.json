@@ -19,7 +19,8 @@
   "ci_tool": [
     "None",
     "Gitlab",
-    "Github"
+    "Github",
+    "Travis"
   ],
   "debug": "y"
 }

@@ -25,7 +25,7 @@ Features
 * JWT token authentication
 * CORS (Cross Origin Resource Sharing)
 * Gitlab CI or Github Actions support (by your choice) with backend linters, testing (in progress)
-* Run tests with unittest or pytest
+* Run tests with pytest
 * Production ready Python web server using Uvicorn and Gunicorn. (in progress)
 
 

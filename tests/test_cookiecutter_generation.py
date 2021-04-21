@@ -6,9 +6,9 @@ import os
 import re
 
 import pytest
-from cookiecutter.exceptions import FailedHookException
 import sh
 from binaryornot.check import is_binary
+from cookiecutter.exceptions import FailedHookException
 
 PATTERN = r"{{(\s?cookiecutter)[.](.*?)}}"
 RE_OBJ = re.compile(PATTERN)
@@ -54,11 +54,7 @@ def _fixture_id(ctx):
 
 def build_files_list(root_dir):
     """Build a list containing absolute paths to the generated files."""
-    return [
-        os.path.join(dirpath, file_path)
-        for dirpath, subdirs, files in os.walk(root_dir)
-        for file_path in files
-    ]
+    return [os.path.join(dirpath, file_path) for dirpath, subdirs, files in os.walk(root_dir) for file_path in files]
 
 
 def check_paths(paths):
@@ -104,11 +100,10 @@ def test_black_passes(cookies, context_override):
     result = cookies.bake(extra_context=context_override)
 
     try:
-        sh.black(
-            "--check", "--diff", "--exclude", "migrations", _cwd=str(result.project)
-        )
+        sh.black("--check", "--diff", "--exclude", "migrations", _cwd=str(result.project))
     except sh.ErrorReturnCode as e:
         pytest.fail(e.stdout.decode())
+
 
 # TODO:  fix tests related to docker & CI
 # @pytest.mark.parametrize(

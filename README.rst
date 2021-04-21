@@ -18,19 +18,15 @@ Features
 
 * Works with Python 3.9
 * FastAPI 0.63.0
-* PostgreSQL + * SQLAlchemy models
-* Alembic migrations.
-* Basic starting models for users (modify and remove as you need).
-* Secure password hashing by default.
-* JWT token authentication.
-* CORS (Cross Origin Resource Sharing).
-* Gitlab CI or Github Actions support (by your choice) with backend linters, testing.
+* PostgreSQL + SQLAlchemy models
+* Alembic migrations
+* Basic starting models for users (modify and remove as you need)
+* Secure password hashing by default
+* JWT token authentication
+* CORS (Cross Origin Resource Sharing)
+* Gitlab CI or Github Actions support (by your choice) with backend linters, testing (in progress)
 * Run tests with unittest or pytest
-* Production ready Python web server using Uvicorn and Gunicorn. (TODO)
-
-TODO:
-* Default integration with pre-commit_ for identifying simple issues before submission to code review
-.. _pre-commit: https://github.com/pre-commit/pre-commit
+* Production ready Python web server using Uvicorn and Gunicorn. (in progress)
 
 
 Acknowledgments
@@ -62,20 +58,13 @@ Now run it against this repo::
 
 You'll be prompted for some values. Provide them, then a FastAPI project will be created for you.
 
-
-Optional Integrations
----------------------
-
-*These features can be enabled during initial project setup.*
-TODO
-
 Constraints
 -----------
 
 * Only maintained 3rd party libraries are used.
-* Environment variables for configuration (This won't work with Apache/mod_wsgi).
+* Environment variables for configuration
 
-pyup
+Pyup
 ~~~~~~~~~~~~~~~~~~
 
 .. image:: https://pyup.io/static/images/logo.png
@@ -93,12 +82,6 @@ Community
 If you think you found a bug or want to request a feature, please open an issue_.
 
 .. _`issue`: https://github.com/
-
-
-Not Exactly What You Want?
----------------------------
-
-This is what I want. *It might not be what you want.* Don't worry, you have options:
 
 Fork This
 ~~~~~~~~~~

@@ -8,6 +8,11 @@ Cookiecutter FastAPI
 Powered by Cookiecutter_, Cookiecutter FastAPI is a framework that helps you to start
 production-ready FastAPI projects quickly.
 
+.. image:: demo.gif
+   :name: demo
+   :align: center
+   :alt: demo
+
 * Documentation: it's in progress
 * If you have problems with Cookiecutter FastAPI, please open issues_
 

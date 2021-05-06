@@ -1,7 +1,7 @@
 fastapi==0.63.0
 python-multipart==0.0.5
 pydantic==1.8.1
-sqlalchemy==1.4.11
+sqlalchemy==1.4.3
 alembic==1.6.0
 psycopg2-binary==2.8.6
 python-jose==3.2.0
@@ -15,7 +15,7 @@ sentry-sdk==1.0.0  # https://github.com/getsentry/sentry-python
 # Testing
 # ------------------------------------------------------------------------------
 pytest==6.2.3
-Faker==8.1.0
+Faker==8.1.2
 tox==3.23.0
 
 # Code quality
@@ -23,6 +23,6 @@ tox==3.23.0
 flake8==3.9.1
 isort==5.8.0
 coverage==5.5
-black==21.4b2
+black==21.5b0
 mypy==0.812
 sqlalchemy-stubs==0.4

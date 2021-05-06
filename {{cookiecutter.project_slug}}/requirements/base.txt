@@ -1,7 +1,7 @@
 fastapi==0.63.0
 python-multipart==0.0.5
 pydantic==1.8.1
-sqlalchemy==1.4.11
+sqlalchemy==1.4.13
 alembic==1.5.8
 psycopg2-binary==2.8.6
 python-jose==3.2.0

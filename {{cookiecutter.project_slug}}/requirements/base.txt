@@ -23,6 +23,6 @@ tox==3.23.0
 flake8==3.9.1
 isort==5.8.0
 coverage==5.5
-black==21.5b0
+black==21.5b1
 mypy==0.812
 sqlalchemy-stubs==0.4

@@ -1,15 +1,15 @@
-fastapi==0.63.0
+fastapi==0.65.1
 python-multipart==0.0.5
-pydantic==1.8.1
-sqlalchemy==1.4.11
-alembic==1.5.8
+pydantic==1.8.2
+sqlalchemy==1.4.15
+alembic==1.6.2
 psycopg2-binary==2.8.6
 python-jose==3.2.0
 passlib==1.7.4
 bcrypt==3.2.0
 
 {%- if cookiecutter.use_sentry == "y" %}
-sentry-sdk==1.0.0  # https://github.com/getsentry/sentry-python
+sentry-sdk==1.1.0  # https://github.com/getsentry/sentry-python
 {%- endif %}
 
 # Testing
@@ -20,9 +20,9 @@ tox==3.23.0
 
 # Code quality
 # ------------------------------------------------------------------------------
-flake8==3.9.1
+flake8==3.9.2
 isort==5.8.0
 coverage==5.5
-black==21.4b2
+black==21.5b1
 mypy==0.812
 sqlalchemy-stubs==0.4

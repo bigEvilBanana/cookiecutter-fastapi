@@ -1,6 +1,6 @@
-fastapi==0.63.0
+fastapi==0.65.1
 python-multipart==0.0.5
-pydantic==1.8.1
+pydantic==1.8.2
 sqlalchemy==1.4.13
 alembic==1.6.2
 psycopg2-binary==2.8.6

@@ -15,7 +15,7 @@ sentry-sdk==1.1.0  # https://github.com/getsentry/sentry-python
 # Testing
 # ------------------------------------------------------------------------------
 tox==3.23.1
-Faker==8.1.4
+Faker==15.3.1
 pytest==6.2.4
 
 # Code quality

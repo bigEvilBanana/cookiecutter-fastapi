@@ -1,4 +1,4 @@
-cookiecutter==1.7.3
+cookiecutter==2.5.0
 sh==1.14.1
 
 # Code quality

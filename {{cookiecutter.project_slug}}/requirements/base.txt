@@ -9,7 +9,7 @@ passlib==1.7.4
 bcrypt==3.2.0
 
 {%- if cookiecutter.use_sentry == "y" %}
-sentry-sdk==1.1.0  # https://github.com/getsentry/sentry-python
+sentry-sdk==1.37.0  # https://github.com/getsentry/sentry-python
 {%- endif %}
 
 # Testing

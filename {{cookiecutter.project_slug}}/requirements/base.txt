@@ -1,5 +1,5 @@
 fastapi==0.65.1
-python-multipart==0.0.5
+python-multipart==0.0.8
 pydantic==1.8.2
 sqlalchemy==1.4.15
 alembic==1.6.2
